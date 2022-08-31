@@ -265,7 +265,7 @@ _=plt.legend(fontsize=12, bbox_to_anchor=(1.03, 1), title="Type")
 fig.savefig("./../images_Lakers/type 상위 10개 산점도.png", dpi=200, facecolor="#F6F7FB")
 ```
 
-![](https://velog.velcdn.com/images/tino-kim/post/046249c2-ceaa-423b-8645-45625157ec6f/image.png)
+![](./../images_Lakers/type%20%EC%83%81%EC%9C%84%2010%EA%B0%9C%20%EC%82%B0%EC%A0%90%EB%8F%84.png)
 
 ∴ type의 상위 10개의 분포를 알아보았다. jump가 가장 많았고, 멀리서는 (3점 슛을 던지는 기술인 것 같다.) 3pt가 많았다. 골대 근처에서는 shooting, driving layup, lay up, hook 등을 이용하였다.
 
