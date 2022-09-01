@@ -265,7 +265,7 @@ _=plt.legend(fontsize=12, bbox_to_anchor=(1.03, 1), title="Type")
 fig.savefig("./../images_Lakers/type 상위 10개 산점도.png", dpi=200, facecolor="#F6F7FB")
 ```
 
-![](./../images_Lakers/type%20%EC%83%81%EC%9C%84%2010%EA%B0%9C%20%EC%82%B0%EC%A0%90%EB%8F%84.png)
+![](https://velog.velcdn.com/images/tino-kim/post/a52d0500-eca6-4c2f-9bea-ec8c73219c19/image.png)
 
 ∴ type의 상위 10개의 분포를 알아보았다. jump가 가장 많았고, 멀리서는 (3점 슛을 던지는 기술인 것 같다.) 3pt가 많았다. 골대 근처에서는 shooting, driving layup, lay up, hook 등을 이용하였다.
 
@@ -305,9 +305,9 @@ _=ax[1].set_title("LAL 아닌 팀이 가장 많이 사용한 기술인 shot의 �
 fig.savefig("./../images_Lakers/etype 전체 포인트와 최대 포인트.png", dpi=200, facecolor="#F6F7FB")
 ```
 
-![](https://velog.velcdn.com/images/tino-kim/post/eaac3909-bd56-4ad1-a975-82830ed31eab/image.png)
+![](https://velog.velcdn.com/images/tino-kim/post/6a6634bc-677b-4ff6-b8c5-d97380c385f5/image.png)
 
-∴ 모든 팀 (LA Lakers와 LAL가 아닌 팀)이 가장 많이 이용한 기술은 shot 이다. 그리고 두 팀의 shot 기술은 모두 최대 포인트는 3점이다. 위의 시계열 그래프와 비교하였을 때, shot 기술의 total points가 높을 수록, 그 해당 팀이 이겼을 확률이 크다.
+∴ 모든 팀 (LA Lakers와 LAL가 아닌 팀)이 가장 많이 이용한 기술은 shot 이다. 날짜 별로 비교했을 때, 항상 shot가 free throw 보다 많았다. LAL 팀은 2009-02-26에 가장 많이 shot를 이용하고, OPP 팀은 2009-02-18에 가장 많이 shot를 이용하였다.
 
 ### 4-6. 경기에서 팀별 제일 많이 한 행동 유형(etype)은?
 
@@ -340,9 +340,9 @@ fig.savefig("./../images_Lakers/total max type head 10.png", dpi=200, facecolor=
 
 #### 팀 별 types의 유형 분포
 
-![](https://velog.velcdn.com/images/tino-kim/post/e3585e01-e879-475a-9c3d-11721bfbd549/image.png)
+![](https://velog.velcdn.com/images/tino-kim/post/11ed060a-df3e-423b-9fb8-06b02cd122c7/image.png)
 
-∴ LAL 팀은 turnaround jump를 압도적으로 다른 팀 보다 많이 이용한다. 다른 팀들도 몇 개의 팀 빼고는 turnaround jump를 많이 이용한다.
+∴ 대부분의 팀들이 def를 많이 이용하고, 6개 팀만 jump를 많이 이용한다. LA Lakers 팀은 압도적으로 def 기술을 많이 이용하고 있고, 승리도 많이 하고 있다. def 기술과 승리는 관련성이 있음을 알 수 있다. 또한, LA Lakers 팀을 많이 이긴 opp 팀을 알아보니, 총 2회로 ORL과 POR 팀이었다. 2개의 팀 모두 def 기술을 가장 많이 이용하는 팀이다. 고로, def 기술을 잘 활용하면 승기를 잡을 수 있음을 증명할 수 있다.
 
 #### 팀 별 가장 많이 한 기술 타입들의 분포
 
@@ -356,9 +356,9 @@ _=plt.title("팀 별 가장 많이 한 기술 타입들의 분포?", fontsize=15
 fig.savefig("./../images_Lakers/팀 별 가장 많이 한 기술 타입들의 분포.png", dpi=200, facecolor="#F6F7FB")
 ```
 
-![](https://velog.velcdn.com/images/tino-kim/post/8c119387-d109-4e0e-978f-006992e8085d/image.png)
+![](https://velog.velcdn.com/images/tino-kim/post/2dfd5a4f-2fdc-45f3-8230-2edec2629257/image.png)
 
-∴ 전반적으로 turnaround jump 기술이 가장 많게 분포되어 있다. 각 팀들이 많이 사용하는 기술이다. 위의 내용을 뒷받침해주는 근거가 된다.
+∴ 전반적으로 def 기술이 가장 많게 분포되어 있다. 그리고 def 기술을 LA Lakers 팀이 가장 많이 이용한다. 그 다음은 jump이고, OFF 팀은 official을 가장 많이 이용하고, NYK 팀은 3pt를 가장 많이 이용한다.
 
 ### 4-7. period 별 type 비율?
 
@@ -371,9 +371,9 @@ _=plt.title("period 별 type 분포?", fontsize=15)
 _=plt.savefig("./../images_Lakers/period 별 type 분포.png", dpi=200, facecolor="#F6F7FB")
 ```
 
-![](https://velog.velcdn.com/images/tino-kim/post/b76481db-10e8-4f0f-816a-dac449b0fe24/image.png)
+![](https://velog.velcdn.com/images/tino-kim/post/54f9a160-e7c4-45f8-9014-2807ef3a9dd3/image.png)
 
-∴ 전체적으로 많이 이용한 세부 기술을 알아 보니, 각 period 별로는 세부 기술의 분포와는 관련 없다. 하지만, LAL 팀의 승률과 세부 기술을 살펴 보니, LAL 팀이 다른 팀들보다 turnaround jump를 잘 구현하기 때문에 승률이 높음을 알 수 있다.
+∴ 전체적으로 많이 이용한 세부 기술을 알아 보니, 각 period 별로는 세부 기술의 분포와는 관련 없다.
 
 ## 5. Review
 
@@ -395,10 +395,12 @@ _=plt.savefig("./../images_Lakers/period 별 type 분포.png", dpi=200, facecolo
 
 - 골대 근처로 슛이 많이 들어가기 때문에, 그 쪽에 분포가 많이 쏠려있다. 그리고 points가 클 수록 멀리 던진 슛을 의미하고, 그 슛들의 분포도 알 수 있었다. 또한 ype의 상위 10개의 분포를 알아보았다. jump가 가장 많았고, 멀리서는 (3점 슛을 던지는 기술인 것 같다.) 3pt가 많았다. 골대 근처에서는 shooting, driving layup, lay up, hook 등을 이용하였다.
 
-- 모든 팀 (LA Lakers와 LAL가 아닌 팀)이 가장 많이 이용한 기술은 shot 이다. 그리고 두 팀의 shot 기술은 모두 최대 포인트는 3점이다. 위의 시계열 그래프와 비교하였을 때, shot 기술의 total points가 높을 수록, 그 해당 팀이 이겼을 확률이 크다.
+- 모든 팀 (LA Lakers와 LAL가 아닌 팀)이 가장 많이 이용한 기술은 shot 이다. 날짜 별로 비교했을 때, 항상 shot가 free throw 보다 많았다. LAL 팀은 2009-02-26에 가장 많이 shot를 이용하고, OPP 팀은 2009-02-18에 가장 많이 shot를 이용하였다.
+
+- 대부분의 팀들이 def를 많이 이용하고, 6개 팀만 jump를 많이 이용한다. LA Lakers 팀은 압도적으로 def 기술을 많이 이용하고 있고, 승리도 많이 하고 있다. def 기술과 승리는 관련성이 있음을 알 수 있다.
 
 - 상위 10개의 데이터를 살펴 보면, 전체적으로 기술을 가장 많이 사용한 팀은 LA LAkers이고, def를 가장 많이 이용하였고, turnaround jump를 가장 적게 사용하였다.
 
-- 팀 별로 많이 이용한 세부 기술을 알아 보니, 전반적으로 turnaround jump 기술이 가장 많게 분포되어 있다. 각 팀들이 많이 사용하는 기술이다.
+- 팀 별로 많이 이용한 세부 기술을 알아 보니, 전반적으로 def 기술이 가장 많게 분포되어 있다. 각 팀들이 많이 사용하는 기술이다.
 
-- 전체적으로 많이 이용한 세부 기술을 알아 보니, 각 period 별로는 세부 기술의 분포와는 관련 없다. 하지만, LAL 팀의 승률과 세부 기술을 살펴 보니, LAL 팀이 다른 팀들보다 def, jump 등의 기술을 더 잘 사용하기 때문에, 승률이 높음을 알 수 있다.
+- 전체적으로 많이 이용한 세부 기술을 알아 보니, 각 period 별로는 세부 기술의 분포와는 관련 없다.
